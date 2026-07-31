@@ -3,8 +3,19 @@ module.exports = {
   content: ['./**/*.html'],
   theme: {
     fontFamily: {
-      serif: ['"Cormorant Garamond"', 'Georgia', '"Times New Roman"', 'serif'],
-      sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+      serif: ['"Source Serif 4"', 'Georgia', '"Times New Roman"', 'serif'],
+      sans: ['"Source Sans 3"', 'system-ui', '-apple-system', 'sans-serif'],
+    },
+    borderRadius: {
+      none: '0px',
+      sm: '2px',
+      DEFAULT: '2px',
+      md: '2px',
+      lg: '2px',
+      xl: '2px',
+      '2xl': '2px',
+      '3xl': '2px',
+      full: '9999px',
     },
     extend: {
       colors: {
@@ -22,30 +33,9 @@ module.exports = {
           900: '#00142B',
           950: '#000C1A',
         },
-        accent: {
-          50:  '#FEF7F0',
-          100: '#FCEADB',
-          200: '#F8D2B0',
-          300: '#F2B67A',
-          400: '#E89843',
-          500: '#C97214',
-          600: '#A85E10',
-          700: '#874B0D',
-          800: '#66380A',
-          900: '#452606',
-        },
-        warm: {
-          50:  '#FDFCFB',
-          100: '#FAF8F5',
-          200: '#F5F0EB',
-          300: '#EDE6DD',
-        },
       },
       maxWidth: {
         container: '1200px',
-      },
-      letterSpacing: {
-        'institutional': '0.2em',
       },
     },
   },
