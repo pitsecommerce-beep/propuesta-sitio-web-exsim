@@ -19,7 +19,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "EXSIM — Executive Simulation",
+    "name": "EXSIM | Executive Simulation",
     "description": "Simulador de negocios donde equipos directivos dirigen una empresa completa, compiten en un mercado real y rinden cuentas ante un consejo de administracion.",
     "provider": {
       "@type": "Organization",
@@ -46,10 +46,10 @@
 
   <!-- ========== HEADER ========== -->
   <header id="site-header" class="site-header" role="banner">
-    <div class="mx-auto max-w-container px-5 sm:px-8 flex items-center justify-between h-[4.5rem]">
-      <a href="#inicio" class="flex-shrink-0" aria-label="IPADE Business School — Inicio">
-        <img src="https://www.ipade.mx/wp-content/uploads/2022/11/logo-ipade-color-white.svg?w=347" alt="IPADE Business School" class="logo-white h-8 w-auto">
-        <img src="https://www.ipade.mx/wp-content/uploads/2022/10/logo-ipade-color-1.svg" alt="IPADE Business School" class="logo-color h-8 w-auto">
+    <div class="mx-auto max-w-container px-5 sm:px-8 flex items-center justify-between h-20">
+      <a href="#inicio" class="flex-shrink-0" aria-label="IPADE Business School - Inicio">
+        <img src="https://www.ipade.mx/wp-content/uploads/2022/11/logo-ipade-color-white.svg?w=347" alt="IPADE Business School" class="logo-white h-10 lg:h-12 w-auto">
+        <img src="https://www.ipade.mx/wp-content/uploads/2022/10/logo-ipade-color-1.svg" alt="IPADE Business School" class="logo-color h-10 lg:h-12 w-auto">
       </a>
 
       <nav class="hidden lg:flex items-center gap-10" aria-label="Navegacion principal">
@@ -83,21 +83,15 @@
   <main id="inicio">
 
     <!-- ========== HERO: VIDEO BANNER ========== -->
-    <section class="relative min-h-screen flex items-center overflow-hidden bg-ipade-950" aria-labelledby="hero-title">
-      <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <iframe
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          style="width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.78vh;"
-          src="https://www.youtube.com/embed/bu4kXHPy8yU?autoplay=1&mute=1&controls=0&loop=1&playlist=bu4kXHPy8yU&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
-          title=""
-          allow="autoplay; encrypted-media"
-          tabindex="-1"
-          loading="eager"
-        ></iframe>
+    <section class="relative h-[70vh] lg:h-[75vh] flex items-center overflow-hidden bg-ipade-950" aria-labelledby="hero-title">
+      <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <video class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover" autoplay muted loop playsinline>
+          <source src="https://videos.files.wordpress.com/CGcgLdrL/up-1600x700-video-desktop-1.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="absolute inset-0" style="background-color: rgba(0,0,0,0.45);" aria-hidden="true"></div>
 
-      <div class="relative z-10 mx-auto max-w-container px-5 sm:px-8 py-32 text-center w-full">
+      <div class="relative z-10 mx-auto max-w-container px-5 sm:px-8 pt-20 text-center w-full">
         <p class="label-sm text-ipade-200 mb-6">IPADE Business School &middot; IESE Business School</p>
         <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-6xl text-white leading-[1.1] mb-6 max-w-3xl mx-auto">
           Pon a prueba a tu comit&eacute; directivo
@@ -146,7 +140,7 @@
           <div class="video-container">
             <iframe
               src="https://www.youtube.com/embed/bu4kXHPy8yU?rel=0&modestbranding=1&color=white"
-              title="Executive Simulation EXSIM — IPADE Business School"
+              title="Executive Simulation EXSIM | IPADE Business School"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               loading="lazy"
@@ -294,7 +288,7 @@
     <section id="formatos" class="section-lg bg-[#F6F7F9]" aria-labelledby="formatos-title">
       <div class="mx-auto max-w-container px-5 sm:px-8">
         <div class="grid lg:grid-cols-12 gap-16 items-start">
-          <div class="lg:col-span-4 lg:sticky lg:top-28">
+          <div class="lg:col-span-4 lg:sticky lg:top-24">
             <p class="label-sm text-[#7C8792] mb-4">Configuraciones</p>
             <h2 id="formatos-title" class="text-2xl sm:text-3xl text-ipade-900 mb-4">Formatos y duraci&oacute;n</h2>
             <p class="text-base text-[#7C8792] mb-6">Tres configuraciones. Todas incluyen plataforma, facilitaci&oacute;n por profesores de IPADE y material para participantes.</p>
@@ -451,7 +445,7 @@
           <div class="video-container">
             <iframe
               src="https://www.youtube.com/embed/9GMMs7UdN3M?rel=0&modestbranding=1&color=white"
-              title="Simulador de Negocios para Ejecutivos EXSIM — IPADE Business School"
+              title="Simulador de Negocios para Ejecutivos EXSIM | IPADE Business School"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               loading="lazy"
@@ -469,7 +463,7 @@
           <h2 id="testimonios-title" class="text-2xl sm:text-3xl text-ipade-900">Lo que dicen quienes lo han vivido</h2>
         </div>
 
-        <!-- TODO: sustituir por testimonios reales — no inventar nombres, cargos ni empresas -->
+        <!-- TODO: sustituir por testimonios reales - no inventar nombres, cargos ni empresas -->
         <div class="grid md:grid-cols-3 gap-6 mb-16">
           <div class="bg-white rounded p-8 border border-ipade-100">
             <p class="text-sm text-[#7C8792] italic leading-relaxed mb-6">&ldquo;Testimonio pendiente de recopilar.&rdquo;</p>
@@ -724,7 +718,7 @@
     <div class="mx-auto max-w-container px-5 sm:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
         <div class="sm:col-span-2 lg:col-span-1">
-          <img src="https://www.ipade.mx/wp-content/uploads/2022/11/logo-ipade-color-white.svg?w=347" alt="IPADE Business School" class="h-8 w-auto mb-4">
+          <img src="https://www.ipade.mx/wp-content/uploads/2022/11/logo-ipade-color-white.svg?w=347" alt="IPADE Business School" class="h-10 lg:h-12 w-auto mb-4">
           <p class="text-xs text-ipade-400 leading-relaxed max-w-xs">Formando l&iacute;deres que transforman organizaciones, con rigor acad&eacute;mico y visi&oacute;n global.</p>
         </div>
 
