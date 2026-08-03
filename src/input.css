@@ -198,4 +198,107 @@
       padding-bottom: 5rem;
     }
   }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background-color 150ms ease-out, border-color 150ms ease-out;
+  }
+
+  .site-header.scrolled {
+    background-color: #fff;
+    border-bottom-color: #E3E7EB;
+  }
+
+  .site-header .nav-link {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: color 150ms ease-out;
+  }
+
+  .site-header .nav-link:hover {
+    color: #D1DCEA;
+  }
+
+  .site-header.scrolled .nav-link {
+    color: #4A5560;
+  }
+
+  .site-header.scrolled .nav-link:hover {
+    color: #003A70;
+  }
+
+  .site-header .header-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.5rem;
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
+  }
+
+  .site-header .header-cta:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .site-header .header-cta:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+
+  .site-header.scrolled .header-cta {
+    color: #fff;
+    border-color: #003A70;
+    background-color: #003A70;
+  }
+
+  .site-header.scrolled .header-cta:hover {
+    background-color: #001D3D;
+    border-color: #001D3D;
+  }
+
+  .site-header.scrolled .header-cta:focus-visible {
+    outline-color: #003A70;
+  }
+
+  .site-header .logo-white {
+    display: block;
+  }
+
+  .site-header .logo-color {
+    display: none;
+  }
+
+  .site-header.scrolled .logo-white {
+    display: none;
+  }
+
+  .site-header.scrolled .logo-color {
+    display: block;
+  }
+
+  .site-header .menu-icon {
+    color: #fff;
+    transition: color 150ms ease-out;
+  }
+
+  .site-header.scrolled .menu-icon {
+    color: #4A5560;
+  }
 }
