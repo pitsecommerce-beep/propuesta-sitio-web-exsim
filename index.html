@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXSIM — Simulador de Negocios | IPADE Business School</title>
+  <title>EXSIM | Simulador de Negocios | IPADE Business School</title>
   <meta name="description" content="EXSIM es el simulador de negocios de IPADE e IESE. Equipos directivos dirigen una empresa completa, compiten en un mercado real y rinden cuentas ante un consejo de administracion.">
 
-  <meta property="og:title" content="EXSIM — Simulador de Negocios | IPADE Business School">
+  <meta property="og:title" content="EXSIM | Simulador de Negocios | IPADE Business School">
   <meta property="og:description" content="Tu comite directivo dirige una empresa completa durante tres anos. En cinco dias.">
   <meta property="og:type" content="website">
   <!-- TODO: sustituir por URL real del dominio -->
@@ -45,23 +45,24 @@
 <body class="bg-white antialiased">
 
   <!-- ========== HEADER ========== -->
-  <header class="sticky top-0 z-50 bg-white border-b border-[#E3E7EB]" role="banner">
+  <header id="site-header" class="site-header" role="banner">
     <div class="mx-auto max-w-container px-5 sm:px-8 flex items-center justify-between h-[4.5rem]">
       <a href="#inicio" class="flex-shrink-0" aria-label="IPADE Business School — Inicio">
-        <img src="https://www.ipade.mx/wp-content/uploads/2022/10/logo-ipade-color-1.svg" alt="IPADE Business School" class="h-8 w-auto">
+        <img src="https://www.ipade.mx/wp-content/uploads/2022/11/logo-ipade-color-white.svg?w=347" alt="IPADE Business School" class="logo-white h-8 w-auto">
+        <img src="https://www.ipade.mx/wp-content/uploads/2022/10/logo-ipade-color-1.svg" alt="IPADE Business School" class="logo-color h-8 w-auto">
       </a>
 
       <nav class="hidden lg:flex items-center gap-10" aria-label="Navegacion principal">
-        <a href="#como-funciona" class="text-[0.8125rem] font-medium text-[#4A5560] hover:text-ipade-500 transition-colors duration-150">Como funciona</a>
-        <a href="#formatos" class="text-[0.8125rem] font-medium text-[#4A5560] hover:text-ipade-500 transition-colors duration-150">Formatos</a>
-        <a href="#plataforma" class="text-[0.8125rem] font-medium text-[#4A5560] hover:text-ipade-500 transition-colors duration-150">Plataforma</a>
-        <a href="#contacto" class="text-[0.8125rem] font-medium text-[#4A5560] hover:text-ipade-500 transition-colors duration-150">Contacto</a>
-        <a href="#formulario" class="btn-primary !py-2.5 !px-6 !text-[0.8125rem]">Agenda una demo</a>
+        <a href="#como-funciona" class="nav-link">Como funciona</a>
+        <a href="#formatos" class="nav-link">Formatos</a>
+        <a href="#plataforma" class="nav-link">Plataforma</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#formulario" class="header-cta">Agenda una demo</a>
       </nav>
 
       <div class="flex items-center gap-3 lg:hidden">
-        <a href="#formulario" class="btn-primary !py-2 !px-5 !text-[0.8125rem]">Agenda una demo</a>
-        <button type="button" class="p-2 -mr-2 text-ipade-400 hover:text-ipade-600 transition-colors duration-150" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
+        <a href="#formulario" class="header-cta">Demo</a>
+        <button type="button" class="p-2 -mr-2 menu-icon" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-btn">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -81,36 +82,33 @@
 
   <main id="inicio">
 
-    <!-- ========== HERO ========== -->
-    <section class="relative overflow-hidden bg-ipade-900" aria-labelledby="hero-title">
-      <div class="relative mx-auto max-w-container px-5 sm:px-8 py-20 sm:py-28 lg:py-32">
-        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div class="lg:col-span-5">
-            <p class="label-sm text-ipade-200 mb-6">IPADE Business School &middot; IESE Business School</p>
-            <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl text-white leading-[1.15] mb-6">
-              Tu comit&eacute; directivo dirige una empresa completa durante tres a&ntilde;os. En cinco d&iacute;as.
-            </h1>
-            <p class="text-base sm:text-lg text-ipade-200 mb-10 max-w-lg leading-relaxed">
-              EXSIM es el simulador de negocios de IPADE e IESE. Los equipos toman decisiones de operaciones, finanzas, comercial, log&iacute;stica, recursos humanos y ESG, compiten entre s&iacute; en un mercado real y responden ante un consejo de administraci&oacute;n.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="#formulario" class="btn-primary">Agenda una demo</a>
-              <!-- TODO: enlazar a PDF real de ficha tecnica -->
-              <a href="#" class="btn-white">Descarga la ficha t&eacute;cnica</a>
-            </div>
-          </div>
+    <!-- ========== HERO: VIDEO BANNER ========== -->
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-ipade-950" aria-labelledby="hero-title">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <iframe
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          style="width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.78vh;"
+          src="https://www.youtube.com/embed/bu4kXHPy8yU?autoplay=1&mute=1&controls=0&loop=1&playlist=bu4kXHPy8yU&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1"
+          title=""
+          allow="autoplay; encrypted-media"
+          tabindex="-1"
+          loading="eager"
+        ></iframe>
+      </div>
+      <div class="absolute inset-0" style="background-color: rgba(0,0,0,0.45);" aria-hidden="true"></div>
 
-          <div class="lg:col-span-7">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/bu4kXHPy8yU?rel=0&modestbranding=1&color=white"
-                title="Executive Simulation EXSIM — IPADE Business School"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
+      <div class="relative z-10 mx-auto max-w-container px-5 sm:px-8 py-32 text-center w-full">
+        <p class="label-sm text-ipade-200 mb-6">IPADE Business School &middot; IESE Business School</p>
+        <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-6xl text-white leading-[1.1] mb-6 max-w-3xl mx-auto">
+          Pon a prueba a tu comit&eacute; directivo
+        </h1>
+        <p class="text-lg sm:text-xl text-ipade-100 mb-10 max-w-xl mx-auto leading-relaxed">
+          Tres a&ntilde;os de operaci&oacute;n simulados en cinco d&iacute;as. Tu equipo dirige, compite y rinde cuentas.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#formulario" class="btn-primary">Agenda una demo</a>
+          <!-- TODO: enlazar a PDF real de ficha tecnica -->
+          <a href="#" class="btn-white">Descarga la ficha t&eacute;cnica</a>
         </div>
       </div>
     </section>
@@ -121,7 +119,7 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div class="text-center lg:text-left">
             <p class="text-3xl sm:text-4xl font-serif font-600 text-ipade-500 leading-none">#14</p>
-            <p class="text-xs text-ipade-400 mt-2 leading-snug">FT Executive Education<br>Ranking 2025 &mdash; mundial</p>
+            <p class="text-xs text-ipade-400 mt-2 leading-snug">FT Executive Education<br>Ranking mundial 2025</p>
           </div>
           <div class="text-center lg:text-left">
             <p class="text-3xl sm:text-4xl font-serif font-600 text-ipade-500 leading-none">Top 7</p>
@@ -129,7 +127,7 @@
           </div>
           <div class="text-center lg:text-left">
             <p class="text-3xl sm:text-4xl font-serif font-600 text-ipade-500 leading-none">10<span class="text-xl align-top ml-0.5">&ordm;</span></p>
-            <p class="text-xs text-ipade-400 mt-2 leading-snug">&Uacute;nica escuela mexicana<br>en el top 20 del FT, consecutivo</p>
+            <p class="text-xs text-ipade-400 mt-2 leading-snug">&Uacute;nica escuela mexicana<br>en el top 20 del FT</p>
           </div>
           <div class="flex items-center justify-center lg:justify-start gap-3">
             <!-- TODO: sustituir por logos oficiales AACSB, AMBA, EQUIS -->
@@ -141,8 +139,25 @@
       </div>
     </section>
 
+    <!-- ========== VIDEO EXSIM ========== -->
+    <section class="section-md bg-[#F6F7F9]" aria-label="Video EXSIM">
+      <div class="mx-auto max-w-container px-5 sm:px-8">
+        <div class="max-w-3xl mx-auto">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/bu4kXHPy8yU?rel=0&modestbranding=1&color=white"
+              title="Executive Simulation EXSIM — IPADE Business School"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== EL PROBLEMA ========== -->
-    <section class="section-lg bg-[#F6F7F9]" aria-labelledby="problema-title">
+    <section class="section-lg bg-white" aria-labelledby="problema-title">
       <div class="mx-auto max-w-container px-5 sm:px-8">
         <div class="max-w-3xl mx-auto text-center">
           <p class="label-sm text-ipade-400 mb-5">El desaf&iacute;o</p>
@@ -150,19 +165,19 @@
             El problema no es la estrategia. Es que nadie la opera completa.
           </h2>
           <p class="text-base sm:text-lg text-[#4A5560] leading-relaxed max-w-2xl mx-auto">
-            En la sala de juntas cada &aacute;rea optimiza lo suyo: finanzas cuida el flujo, comercial persigue volumen, operaciones protege eficiencia. Nadie ve el sistema completo ni las consecuencias cruzadas de cada decisi&oacute;n. Una presentaci&oacute;n no ense&ntilde;a eso. Una decisi&oacute;n con consecuencias reales, competencia directa y rendici&oacute;n de cuentas, s&iacute;.
+            Cada &aacute;rea optimiza lo suyo. Nadie ve el sistema completo ni las consecuencias cruzadas. EXSIM obliga a operar la empresa entera bajo competencia real y rendici&oacute;n de cuentas.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ========== COMO FUNCIONA ========== -->
-    <section id="como-funciona" class="section-lg bg-white" aria-labelledby="como-funciona-title">
+    <section id="como-funciona" class="section-lg bg-[#F6F7F9]" aria-labelledby="como-funciona-title">
       <div class="mx-auto max-w-container px-5 sm:px-8">
         <div class="max-w-xl mb-16">
           <p class="label-sm text-[#7C8792] mb-4">El simulador</p>
           <h2 id="como-funciona-title" class="text-2xl sm:text-3xl text-ipade-900">C&oacute;mo funciona EXSIM</h2>
-          <p class="text-base text-[#7C8792] mt-4">Basado en el caso Mezquite, S.A., el simulador coloca a cada equipo al frente de una empresa completa durante varios periodos de operaci&oacute;n.</p>
+          <p class="text-base text-[#7C8792] mt-4">Basado en el caso Mezquite, S.A. Cada equipo hereda y opera una empresa completa durante varios periodos.</p>
         </div>
 
         <!-- 4 steps -->
@@ -170,22 +185,22 @@
           <div class="bg-white p-8 lg:p-10">
             <span class="label-sm text-ipade-500">01</span>
             <h3 class="text-xl sm:text-2xl mt-3 mb-3">Heredan una empresa en marcha</h3>
-            <p class="text-sm text-[#7C8792] leading-relaxed">Todos los equipos parten de la misma posici&oacute;n financiera y de mercado.</p>
+            <p class="text-sm text-[#7C8792] leading-relaxed">Misma posici&oacute;n financiera y de mercado para todos los equipos.</p>
           </div>
           <div class="bg-white p-8 lg:p-10">
             <span class="label-sm text-ipade-500">02</span>
             <h3 class="text-xl sm:text-2xl mt-3 mb-3">Deciden por periodos</h3>
-            <p class="text-sm text-[#7C8792] leading-relaxed">Precio, publicidad, fuerza de ventas, producci&oacute;n, inventarios, transporte, contrataciones, inversi&oacute;n y financiamiento.</p>
+            <p class="text-sm text-[#7C8792] leading-relaxed">Precio, producci&oacute;n, inversi&oacute;n, personal y financiamiento.</p>
           </div>
           <div class="bg-white p-8 lg:p-10">
             <span class="label-sm text-ipade-500">03</span>
             <h3 class="text-xl sm:text-2xl mt-3 mb-3">Compiten en un mercado com&uacute;n</h3>
-            <p class="text-sm text-[#7C8792] leading-relaxed">El resultado de cada empresa depende de lo que hagan las dem&aacute;s.</p>
+            <p class="text-sm text-[#7C8792] leading-relaxed">El resultado depende de lo que hagan los dem&aacute;s equipos.</p>
           </div>
           <div class="bg-white p-8 lg:p-10">
             <span class="label-sm text-ipade-500">04</span>
             <h3 class="text-xl sm:text-2xl mt-3 mb-3">Rinden cuentas</h3>
-            <p class="text-sm text-[#7C8792] leading-relaxed">Presentan ante un consejo de administraci&oacute;n y negocian con banca y con el sindicato.</p>
+            <p class="text-sm text-[#7C8792] leading-relaxed">Presentan ante consejo de administraci&oacute;n y negocian con banca y sindicato.</p>
           </div>
         </div>
 
@@ -254,21 +269,21 @@
             <p class="label-sm text-ipade-200 mb-4">Consejo de administraci&oacute;n</p>
             <h3 class="text-xl sm:text-2xl text-white mb-4">Tres voces, tres agendas</h3>
             <p class="text-sm text-ipade-300 leading-relaxed">
-              Los equipos presentan resultados y estrategia ante un consejo con miembros que juegan roles distintos: fondo minoritario, familia mayoritaria y consejero independiente. Cada uno presiona desde intereses diferentes.
+              Fondo minoritario, familia mayoritaria y consejero independiente. Cada uno presiona desde intereses distintos.
             </p>
           </div>
           <div class="bg-ipade-800 p-8 lg:p-10">
             <p class="label-sm text-ipade-200 mb-4">Negociaci&oacute;n con banca</p>
-            <h3 class="text-xl sm:text-2xl text-white mb-4">Cr&eacute;dito condicionado a resultados</h3>
+            <h3 class="text-xl sm:text-2xl text-white mb-4">Cr&eacute;dito condicionado</h3>
             <p class="text-sm text-ipade-300 leading-relaxed">
-              Representantes de banca negocian condiciones de cr&eacute;dito e hipoteca. Las condiciones dependen de los resultados financieros y la credibilidad de la estrategia presentada.
+              Las condiciones de financiamiento dependen de los resultados y la credibilidad de la estrategia presentada.
             </p>
           </div>
           <div class="bg-ipade-800 p-8 lg:p-10">
             <p class="label-sm text-ipade-200 mb-4">Negociaci&oacute;n sindical</p>
-            <h3 class="text-xl sm:text-2xl text-white mb-4">Salarios, prestaciones, huelga</h3>
+            <h3 class="text-xl sm:text-2xl text-white mb-4">Salarios y prestaciones</h3>
             <p class="text-sm text-ipade-300 leading-relaxed">
-              Representantes sindicales negocian salarios, prestaciones y condiciones laborales. Un mal manejo puede derivar en huelga y par&aacute;lisis operativa con impacto directo en resultados.
+              Un mal manejo puede derivar en huelga y paro operativo con impacto directo en resultados.
             </p>
           </div>
         </div>
@@ -282,10 +297,10 @@
           <div class="lg:col-span-4 lg:sticky lg:top-28">
             <p class="label-sm text-[#7C8792] mb-4">Configuraciones</p>
             <h2 id="formatos-title" class="text-2xl sm:text-3xl text-ipade-900 mb-4">Formatos y duraci&oacute;n</h2>
-            <p class="text-base text-[#7C8792] mb-6">Tres configuraciones para distintas necesidades. Todos incluyen acceso a la plataforma, facilitaci&oacute;n por profesores de IPADE y material para participantes.</p>
+            <p class="text-base text-[#7C8792] mb-6">Tres configuraciones. Todas incluyen plataforma, facilitaci&oacute;n por profesores de IPADE y material para participantes.</p>
             <p class="text-sm text-[#7C8792]">
               <span class="font-semibold text-ipade-700">Modalidades:</span> presencial, online s&iacute;ncrono y blended<br>
-              <span class="font-semibold text-ipade-700">Sedes:</span> CDMX, Guadalajara, Monterrey o en instalaciones de la empresa
+              <span class="font-semibold text-ipade-700">Sedes:</span> CDMX, Guadalajara, Monterrey o in-company
             </p>
             <!-- TODO: confirmar tamano de grupo recomendado y numero de equipos -->
           </div>
@@ -299,7 +314,7 @@
                   <p class="text-4xl font-serif font-600 leading-none">5 d&iacute;as</p>
                 </div>
                 <div class="p-6 sm:p-8">
-                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">Ciclo largo con m&uacute;ltiples periodos, consejos de administraci&oacute;n y negociaciones con banca y sindicato. Para equipos directivos completos que buscan la experiencia &iacute;ntegra.</p>
+                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">Ciclo completo con m&uacute;ltiples periodos, consejos de administraci&oacute;n y negociaciones con banca y sindicato.</p>
                   <p class="label-sm text-ipade-300">Para equipos directivos completos</p>
                 </div>
               </div>
@@ -312,8 +327,8 @@
                   <p class="text-4xl font-serif font-600 text-ipade-800 leading-none">3 d&iacute;as</p>
                 </div>
                 <div class="p-6 sm:p-8">
-                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">N&uacute;cleo de decisi&oacute;n y competencia con consejo abreviado. Para grupos con agenda limitada que quieren el ciclo competitivo completo.</p>
-                  <p class="label-sm text-ipade-300">Para grupos con agenda limitada</p>
+                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">N&uacute;cleo competitivo con consejo abreviado. Para grupos con agenda limitada.</p>
+                  <p class="label-sm text-ipade-300">Ciclo competitivo completo</p>
                 </div>
               </div>
             </div>
@@ -325,8 +340,8 @@
                   <p class="text-4xl font-serif font-600 text-ipade-800 leading-none">1 d&iacute;a</p>
                 </div>
                 <div class="p-6 sm:p-8">
-                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">Sesi&oacute;n de sensibilizaci&oacute;n y alineaci&oacute;n. Para arranques de programa, offsites o eventos de equipo directivo.</p>
-                  <p class="label-sm text-ipade-300">Arranques, offsites y eventos</p>
+                  <p class="text-sm text-[#4A5560] leading-relaxed mb-3">Sesi&oacute;n de sensibilizaci&oacute;n y alineaci&oacute;n para arranques, offsites o eventos.</p>
+                  <p class="label-sm text-ipade-300">Arranques y eventos de equipo</p>
                 </div>
               </div>
             </div>
@@ -340,8 +355,8 @@
       <div class="mx-auto max-w-container px-5 sm:px-8">
         <div class="text-center mb-14">
           <p class="label-sm text-[#7C8792] mb-4">La plataforma</p>
-          <h2 id="plataforma-title" class="text-2xl sm:text-3xl text-ipade-900 mb-4">Interfaz dise&ntilde;ada para la toma de decisiones</h2>
-          <p class="text-base text-[#7C8792] max-w-xl mx-auto">Cada equipo opera desde su propio tablero con informaci&oacute;n completa para la toma de decisiones.</p>
+          <h2 id="plataforma-title" class="text-2xl sm:text-3xl text-ipade-900 mb-4">Tablero de decisiones en tiempo real</h2>
+          <p class="text-base text-[#7C8792] max-w-xl mx-auto">Cada equipo opera desde su propio tablero con toda la informaci&oacute;n para decidir.</p>
         </div>
 
         <!-- TODO: sustituir por capturas reales de la plataforma -->
@@ -384,35 +399,35 @@
                 <div class="flex-shrink-0 w-px bg-ipade-200 ml-2"></div>
                 <div class="pb-2">
                   <p class="font-semibold text-ipade-800 text-[0.9375rem]">Diagn&oacute;stico bajo presi&oacute;n</p>
-                  <p class="text-sm text-[#7C8792] mt-1">Evidencia del comportamiento del equipo directivo bajo competencia real, no en un ejercicio controlado.</p>
+                  <p class="text-sm text-[#7C8792] mt-1">C&oacute;mo se comporta el equipo directivo bajo competencia real.</p>
                 </div>
               </div>
               <div class="flex gap-5">
                 <div class="flex-shrink-0 w-px bg-ipade-200 ml-2"></div>
                 <div class="pb-2">
                   <p class="font-semibold text-ipade-800 text-[0.9375rem]">Lenguaje com&uacute;n</p>
-                  <p class="text-sm text-[#7C8792] mt-1">Todas las &aacute;reas operan con el mismo vocabulario financiero y operativo despu&eacute;s del ejercicio.</p>
+                  <p class="text-sm text-[#7C8792] mt-1">Todas las &aacute;reas salen con el mismo vocabulario financiero y operativo.</p>
                 </div>
               </div>
               <div class="flex gap-5">
                 <div class="flex-shrink-0 w-px bg-ipade-200 ml-2"></div>
                 <div class="pb-2">
                   <p class="font-semibold text-ipade-800 text-[0.9375rem]">Mapa de decisiones</p>
-                  <p class="text-sm text-[#7C8792] mt-1">Evidencia concreta de c&oacute;mo se toman decisiones y d&oacute;nde se rompe la coordinaci&oacute;n entre &aacute;reas.</p>
+                  <p class="text-sm text-[#7C8792] mt-1">D&oacute;nde se rompe la coordinaci&oacute;n entre &aacute;reas.</p>
                 </div>
               </div>
               <div class="flex gap-5">
                 <div class="flex-shrink-0 w-px bg-ipade-200 ml-2"></div>
                 <div class="pb-2">
                   <p class="font-semibold text-ipade-800 text-[0.9375rem]">Cierre con profesor titular</p>
-                  <p class="text-sm text-[#7C8792] mt-1">Sesi&oacute;n de lectura de resultados y reflexi&oacute;n guiada sobre lo que revel&oacute; el ejercicio.</p>
+                  <p class="text-sm text-[#7C8792] mt-1">Lectura de resultados y reflexi&oacute;n guiada sobre lo que revel&oacute; el ejercicio.</p>
                 </div>
               </div>
               <div class="flex gap-5">
                 <div class="flex-shrink-0 w-px bg-ipade-200 ml-2"></div>
                 <div class="pb-2">
                   <p class="font-semibold text-ipade-800 text-[0.9375rem]">Cohesi&oacute;n de equipo</p>
-                  <p class="text-sm text-[#7C8792] mt-1">Experiencia compartida que fortalece la confianza del equipo m&aacute;s all&aacute; del aula.</p>
+                  <p class="text-sm text-[#7C8792] mt-1">Experiencia compartida que fortalece la confianza del equipo.</p>
                 </div>
               </div>
             </div>
@@ -561,7 +576,7 @@
           <div class="lg:col-span-5">
             <p class="label-sm text-ipade-200 mb-4">Siguiente paso</p>
             <h2 id="formulario-title" class="text-2xl sm:text-3xl text-white mb-4">Agenda una demo de EXSIM</h2>
-            <p class="text-base text-ipade-300 mb-8">Completa el formulario y un asesor te contactar&aacute; en menos de 48 horas h&aacute;biles.</p>
+            <p class="text-base text-ipade-300 mb-8">Completa el formulario. Un asesor te contactar&aacute; en menos de 48 horas h&aacute;biles.</p>
             <div class="hidden lg:block space-y-4 text-sm text-ipade-400">
               <div class="flex items-center gap-3">
                 <svg class="w-4 h-4 text-ipade-300 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
@@ -656,21 +671,21 @@
                   <span>&iquest;Qu&eacute; perfil necesitan los participantes?</span>
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">EXSIM est&aacute; dise&ntilde;ado para directivos y gerentes de cualquier &aacute;rea funcional. No se requiere un perfil espec&iacute;fico; la riqueza del ejercicio proviene precisamente de la diversidad de perspectivas en el equipo.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Para directivos y gerentes de cualquier &aacute;rea funcional. No se requiere perfil espec&iacute;fico.</p>
               </details>
               <details class="group py-5" role="listitem">
                 <summary class="flex items-start justify-between gap-4 cursor-pointer text-[0.9375rem] font-semibold text-ipade-800 hover:text-ipade-600 transition-colors duration-150 list-none">
                   <span>&iquest;Se requiere conocimiento financiero previo?</span>
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">No. La plataforma y la facilitaci&oacute;n est&aacute;n dise&ntilde;adas para que participantes de todas las &aacute;reas puedan tomar decisiones informadas. Parte del aprendizaje es desarrollar un lenguaje financiero com&uacute;n.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">No. La plataforma y la facilitaci&oacute;n permiten que participantes de todas las &aacute;reas tomen decisiones informadas.</p>
               </details>
               <details class="group py-5" role="listitem">
                 <summary class="flex items-start justify-between gap-4 cursor-pointer text-[0.9375rem] font-semibold text-ipade-800 hover:text-ipade-600 transition-colors duration-150 list-none">
                   <span>&iquest;Se puede correr en las instalaciones de la empresa?</span>
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">S&iacute;. EXSIM puede realizarse en las sedes de IPADE (CDMX, Guadalajara, Monterrey) o en las instalaciones de la empresa, siempre que se cumplan los requisitos t&eacute;cnicos b&aacute;sicos de conectividad y espacio.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">S&iacute;. En sedes IPADE (CDMX, Guadalajara, Monterrey) o in-company con conectividad b&aacute;sica.</p>
               </details>
               <details class="group py-5" role="listitem">
                 <summary class="flex items-start justify-between gap-4 cursor-pointer text-[0.9375rem] font-semibold text-ipade-800 hover:text-ipade-600 transition-colors duration-150 list-none">
@@ -678,7 +693,7 @@
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
                 <!-- TODO: confirmar disponibilidad de version en ingles -->
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Pendiente de confirmar. Consulta directamente con el coordinador del programa para conocer la disponibilidad de materiales y facilitaci&oacute;n en ingl&eacute;s.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Pendiente de confirmar. Consulta con el coordinador del programa.</p>
               </details>
               <details class="group py-5" role="listitem">
                 <summary class="flex items-start justify-between gap-4 cursor-pointer text-[0.9375rem] font-semibold text-ipade-800 hover:text-ipade-600 transition-colors duration-150 list-none">
@@ -686,7 +701,7 @@
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
                 <!-- TODO: confirmar criterios de formacion de equipos -->
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Los equipos se conforman buscando diversidad funcional: idealmente cada equipo incluye perfiles de distintas &aacute;reas para replicar la din&aacute;mica real de un comit&eacute; directivo.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Buscando diversidad funcional: cada equipo incluye perfiles de distintas &aacute;reas para replicar un comit&eacute; directivo real.</p>
               </details>
               <details class="group py-5" role="listitem">
                 <summary class="flex items-start justify-between gap-4 cursor-pointer text-[0.9375rem] font-semibold text-ipade-800 hover:text-ipade-600 transition-colors duration-150 list-none">
@@ -694,7 +709,7 @@
                   <svg class="w-5 h-5 text-ipade-300 flex-shrink-0 mt-0.5 transition-transform duration-150 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
                 </summary>
                 <!-- TODO: confirmar tiempos de organizacion -->
-                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Depende del formato y la disponibilidad de fechas. Contacta al coordinador para conocer la disponibilidad m&aacute;s pr&oacute;xima.</p>
+                <p class="mt-3 text-sm text-[#7C8792] leading-relaxed max-w-2xl">Depende del formato y disponibilidad. Contacta al coordinador para fechas pr&oacute;ximas.</p>
               </details>
             </div>
           </div>
@@ -748,8 +763,8 @@
       </div>
 
       <div class="border-t border-ipade-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-xs text-ipade-500">&copy; 2025 IPADE Business School. Todos los derechos reservados.</p>
-        <p class="text-xs text-ipade-500">EXSIM &mdash; Desarrollado con IESE Business School y Eureka Simulations</p>
+        <p class="text-xs text-ipade-500">&copy; 2026 IPADE Business School. Todos los derechos reservados.</p>
+        <p class="text-xs text-ipade-500">EXSIM &middot; Desarrollado con IESE Business School y Eureka Simulations</p>
       </div>
     </div>
   </footer>
@@ -757,10 +772,35 @@
   <!-- ========== SCRIPTS ========== -->
   <script>
     (function(){
-      var btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
-      if(!btn||!menu)return;
-      btn.addEventListener('click',function(){var x=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!x));menu.classList.toggle('hidden');});
-      menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.add('hidden');btn.setAttribute('aria-expanded','false');});});
+      var header=document.getElementById('site-header'),btn=document.getElementById('mobile-menu-btn'),menu=document.getElementById('mobile-menu');
+      if(!header)return;
+      var threshold=60,menuOpen=false;
+
+      function updateHeader(){
+        if(menuOpen||window.scrollY>threshold){header.classList.add('scrolled');}
+        else{header.classList.remove('scrolled');}
+      }
+
+      window.addEventListener('scroll',updateHeader,{passive:true});
+      updateHeader();
+
+      if(btn&&menu){
+        btn.addEventListener('click',function(){
+          var expanded=btn.getAttribute('aria-expanded')==='true';
+          btn.setAttribute('aria-expanded',String(!expanded));
+          menu.classList.toggle('hidden');
+          menuOpen=!expanded;
+          updateHeader();
+        });
+        menu.querySelectorAll('a').forEach(function(a){
+          a.addEventListener('click',function(){
+            menu.classList.add('hidden');
+            btn.setAttribute('aria-expanded','false');
+            menuOpen=false;
+            updateHeader();
+          });
+        });
+      }
     })();
 
     (function(){
